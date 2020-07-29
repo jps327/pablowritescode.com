@@ -1,6 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -12,8 +12,7 @@ import Img from 'gatsby-image';
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
-export default function Image(): JSX.Element {
+export default function Headshot(): JSX.Element {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "headshot.jpg" }) {

@@ -1,9 +1,12 @@
 import React from 'react';
 
 import ExternalLink from '../components/ui/ExternalLink';
+import Headshot from '../components/images/Headshot';
+import Icon from '../components/ui/Icon';
 import Layout from '../components/Layout';
-import Image from '../components/Image';
 import SEO from '../components/SEO';
+
+const ICON_HOVER_COLOR = '#4A5568'; // gray-700
 
 export default function IndexPage(): JSX.Element {
   return (
@@ -13,7 +16,7 @@ export default function IndexPage(): JSX.Element {
         style={{ maxWidth: '150px', width: '150px' }}
         className="float-left mr-6"
       >
-        <Image />
+        <Headshot />
       </div>
 
       <p>
@@ -53,6 +56,26 @@ export default function IndexPage(): JSX.Element {
         impact, public health, sexual health, international development, and
         humanitarian emergencies.
       </p>
+      <div className="flex justify-center mt-4 space-x-2">
+        <Icon
+          type="twitter"
+          width={32}
+          link="https://twitter.com/PabloSarmiento"
+          hoverColor={ICON_HOVER_COLOR}
+        />
+        <Icon
+          type="linkedin"
+          width={32}
+          link="https://www.linkedin.com/in/juan-pablo-sarmiento-a4b74034/"
+          hoverColor={ICON_HOVER_COLOR}
+        />
+        <Icon
+          type="github"
+          width={33}
+          link="https://github.com/jps327"
+          hoverColor={ICON_HOVER_COLOR}
+        />
+      </div>
     </Layout>
   );
 }
