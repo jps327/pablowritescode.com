@@ -1,0 +1,18 @@
+.main {
+  font-size: 1.125rem;
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+.main a {
+  color: #2B6CB0; /* text-blue-700 */
+  transition: color 150ms;
+}
+
+.main a:hover {
+  color: #4299E1; /* text-blue-500 */
+}
+
+.main a:focus {
+  color: #2C5282; /* text-blue-800 */
+}
