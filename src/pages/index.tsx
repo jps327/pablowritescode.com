@@ -22,7 +22,7 @@ export default function IndexPage(): JSX.Element {
       <p>
         I&apos;m the Frontend Engineering Team Lead at{' '}
         <ExternalLink to="https://www.zenysis.com/">Zenysis</ExternalLink> where
-        I work on data analysis systems to help oragnizations make better
+        I work on data analysis systems to help organizations make better
         decisions with their public health data. Before that I was a
         Forward-Deployed Engineer on{' '}
         <ExternalLink to="https://www.palantir.com/">
