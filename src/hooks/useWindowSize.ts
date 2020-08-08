@@ -18,9 +18,11 @@ export const SCREEN_SIZE = {
 
 // returns tuple of window [width, height]
 export default function useWindowSize(): [number, number] {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth || 0);
+  const [windowWidth, setWindowWidth] = React.useState(
+    window ? window.innerWidth : 0,
+  );
   const [windowHeight, setWindowHeight] = React.useState(
-    window.innerHeight || 0,
+    window ? window.innerHeight : 0,
   );
 
   React.useEffect(() => {
