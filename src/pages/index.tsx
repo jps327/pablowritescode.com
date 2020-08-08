@@ -13,8 +13,8 @@ export default function IndexPage(): JSX.Element {
     <Layout headingTitle="Hi, I'm Pablo">
       <SEO title="Home" />
       <div
-        style={{ maxWidth: '150px', width: '150px' }}
-        className="float-left mr-6"
+        style={{ maxWidth: '160px' }}
+        className="w-40 mx-auto mb-4 sm:m-0 sm:mr-6 sm:float-left"
       >
         <Headshot />
       </div>

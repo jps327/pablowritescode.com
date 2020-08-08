@@ -7,7 +7,20 @@ module.exports = {
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@PabloSarmiento',
 
+    menuLinks: [
+      { label: 'Home', to: '/' },
+      { label: 'Talks', to: '/talks/' },
+      { label: 'Contact', to: '/contact/' },
+    ],
+
     talks: [
+      {
+        eventTitle: 'Bytes of Good Podcast',
+        eventLink: 'https://bytesofgood.org/',
+        talkTitle: 'Ep 1: Zenysis & the Cholera Outbreak in Mozambique',
+        talkLink: 'https://open.spotify.com/episode/3chLLECuKLd6h1pk5s64ww',
+        years: [2020],
+      },
       {
         eventTitle: 'Global Digital Development Forum',
         eventLink: 'https://digitaldevforum.com/',

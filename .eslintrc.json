@@ -23,6 +23,7 @@
     "react/jsx-filename-extension": "off",
     "react/jsx-one-expression-per-line": "off",
     "import/extensions": "off",
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-ts-comment": "off",
+    "arrow-parens": "off"
   }
 }

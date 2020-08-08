@@ -2,9 +2,10 @@ import React from 'react';
 
 import GithubIcon from './GithubIcon';
 import LinkedInIcon from './LinkedInIcon';
+import MenuIcon from './MenuIcon';
 import TwitterIcon from './TwitterIcon';
 
-type IconType = 'twitter' | 'linkedin' | 'github';
+type IconType = 'twitter' | 'linkedin' | 'github' | 'menu';
 
 type Props = {
   type: IconType,
@@ -38,6 +39,10 @@ export default function Icon({
     }
     case 'github': {
       IconElement = GithubIcon;
+      break;
+    }
+    case 'menu': {
+      IconElement = MenuIcon;
       break;
     }
     default:
