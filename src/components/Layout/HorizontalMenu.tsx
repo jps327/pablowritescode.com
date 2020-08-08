@@ -8,7 +8,7 @@ type Props = {
   isOpen: boolean,
 };
 
-export default function HorizontalMenu({ isOpen }: Props): JSX.Element {
+function HorizontalMenu({ isOpen }: Props): JSX.Element {
   const menuLinks = useMenuLinks();
 
   const links = React.useMemo(
@@ -32,3 +32,5 @@ export default function HorizontalMenu({ isOpen }: Props): JSX.Element {
 
   return <div className={containerClassName}>{links}</div>;
 }
+
+export default React.memo(HorizontalMenu);

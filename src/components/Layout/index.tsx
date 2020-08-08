@@ -7,7 +7,6 @@ import LayoutCSS from './index.module.css';
 import HorizontalMenu from './HorizontalMenu';
 import VerticalMenu from './VerticalMenu';
 import WebsiteContext from '../../WebsiteContext';
-import useWindowSize, { SCREEN_SIZE } from '../../hooks/useWindowSize';
 
 type Props = {
   headingTitle: string,
@@ -26,18 +25,19 @@ export default function Layout({ children, headingTitle }: Props): JSX.Element {
       }
     }
   `);
-
-  const [windowWidth] = useWindowSize();
   const { fullName, jobTitleShort } = data.site.siteMetadata;
-  const isPhoneScreen = windowWidth < SCREEN_SIZE.PHONE;
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header fullName={fullName} jobTitle={jobTitleShort} />
-      {isPhoneScreen && <HorizontalMenu isOpen={websiteState.isMenuOpen} />}
+      <div className="block sm:hidden">
+        <HorizontalMenu isOpen={websiteState.isMenuOpen} />
+      </div>
 
       <div className="flex">
-        {!isPhoneScreen && <VerticalMenu />}
+        <div className="hidden sm:inline-block">
+          <VerticalMenu />
+        </div>
         <div className="inline-block w-full px-16 py-8">
           <main className={LayoutCSS.main}>
             <h1 className="mb-4 text-4xl font-bold">{headingTitle}</h1>

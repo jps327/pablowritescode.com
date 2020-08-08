@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import useMenuLinks from './useMenuLinks';
 
-export default function VerticalMenu(): JSX.Element {
+function VerticalMenu(): JSX.Element {
   const menuLinks = useMenuLinks();
 
   const links = React.useMemo(
@@ -19,5 +19,7 @@ export default function VerticalMenu(): JSX.Element {
     [menuLinks],
   );
 
-  return <div className="inline-block py-8 space-y-4">{links}</div>;
+  return <div className="py-8 space-y-4">{links}</div>;
 }
+
+export default React.memo(VerticalMenu);
