@@ -31,7 +31,7 @@ export default function IndexPage(): JSX.Element {
         Philanthropy Team where I worked on projects in{' '}
         <ExternalLink to="https://reliefweb.int/report/philippines/palantir-technology-enables-intelligent-typhoon-response">
           disaster relief
-        </ExternalLink>{' '}
+        </ExternalLink>
         ,{' '}
         <ExternalLink to="https://wget2014.files.wordpress.com/2014/04/16_impact-study-palantirs-response-to-typhoon-haiyan.pdf">
           humanitarian emergencies
@@ -39,7 +39,7 @@ export default function IndexPage(): JSX.Element {
         ,{' '}
         <ExternalLink to="https://www.youtube.com/watch?v=d298LZd38Kk">
           food security
-        </ExternalLink>{' '}
+        </ExternalLink>
         ,{' '}
         <ExternalLink to="https://www.youtube.com/watch?v=xjK1Sas2jIc">
           agriculture
