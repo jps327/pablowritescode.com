@@ -32,7 +32,7 @@ export default function IndexPage(): JSX.Element {
         <ExternalLink to="https://reliefweb.int/report/philippines/palantir-technology-enables-intelligent-typhoon-response">
           disaster relief
         </ExternalLink>{' '}
-        and{' '}
+        ,{' '}
         <ExternalLink to="https://wget2014.files.wordpress.com/2014/04/16_impact-study-palantirs-response-to-typhoon-haiyan.pdf">
           humanitarian emergencies
         </ExternalLink>
@@ -40,7 +40,7 @@ export default function IndexPage(): JSX.Element {
         <ExternalLink to="https://www.youtube.com/watch?v=d298LZd38Kk">
           food security
         </ExternalLink>{' '}
-        and{' '}
+        ,{' '}
         <ExternalLink to="https://www.youtube.com/watch?v=xjK1Sas2jIc">
           agriculture
         </ExternalLink>
