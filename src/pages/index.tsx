@@ -20,7 +20,7 @@ export default function IndexPage(): JSX.Element {
       </div>
 
       <p>
-        I&apos;m Director of Engineering at{' '}
+        I&apos;m the Director of Engineering at{' '}
         <ExternalLink to="https://www.zenysis.com/">Zenysis</ExternalLink> where
         I work on data analysis systems to help organizations make better
         decisions with their public health data. Before that I was a
