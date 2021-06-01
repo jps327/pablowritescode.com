@@ -15,6 +15,14 @@ module.exports = {
 
     talks: [
       {
+        eventTitle: 'Global Digital Development Summit',
+        eventLink: 'https://www.gddsummit.org/',
+        talkTitle:
+          'Think Like a Technologist: Data Analytics and Decision-Focused Strategies for Global Health',
+        talkLink: 'https://www.youtube.com/watch?v=gYrzJJIFQOs&t=3s',
+        years: [2021],
+      },
+      {
         eventTitle: 'Bytes of Good Podcast',
         eventLink: 'https://bytesofgood.org/',
         talkTitle: 'Ep 1: Zenysis & the Cholera Outbreak in Mozambique',
